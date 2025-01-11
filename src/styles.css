@@ -1,0 +1,27 @@
+.bg-sec {
+  background-color: #1abc9c;
+}
+.color-sec {
+  color: #1abc9c;
+}
+.icon {
+  width: fit-content;
+}
+.icon::after {
+  content: "";
+  width: 80px;
+  height: 4px;
+  position: absolute;
+  top: 50%;
+  left: 190%;
+  background-color: white;
+}
+.icon::before {
+  content: "";
+  width: 80px;
+  height: 4px;
+  position: absolute;
+  top: 50%;
+  right: 190%;
+  background-color: white;
+}

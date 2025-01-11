@@ -1,0 +1,37 @@
+section{
+  padding-top: 80px;
+}
+h1 {
+  color: #2c3e50;
+}
+.icon::after {
+  background-color: #2c3e50;
+}
+.contact-form {
+  width: 60%;
+}
+.icon::before {
+  background-color: #2c3e50;
+}
+.contact-form .form-control {
+  border-color: #ffffff;
+  border-bottom-color: #cbcdd0;
+}
+.contact-form .form-control:focus {
+  border-color: #ffffff;
+  border-bottom-color: #cbcdd0;
+  box-shadow: 0 0 0px #ffffff;
+}
+.contact-form .form-control::placeholder {
+  color: #595c5f;
+}
+.label-hidden {
+  transform: translateY(200px);
+}
+.label-show {
+  transform: translateY(0);
+}
+.contact-form .btn {
+  --bs-btn-hover-border-color: #1abc9c;
+  --bs-btn-hover-bg: #1abc9c;
+}

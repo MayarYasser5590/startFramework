@@ -1,0 +1,103 @@
+<section>
+  <div class="container">
+    <div class="text-center">
+      <h1 class="mb-2 pt-5 fw-bold fs-1 text-uppercase">portfolio component</h1>
+      <div class="icon m-auto position-relative mb-3">
+        <i class="fa-solid fa-star" style="color: #2c3e50"></i>
+      </div>
+    </div>
+    <div class="row g-4">
+      <div class="col-md-4 px-4 mb-4">
+        <div
+          (click)="displayImage('/images/poert1.png')"
+          class="inner position-relative"
+        >
+          <img class="w-100 rounded-3" src="/images/poert1.png" alt="port1" />
+          <div
+            class="layar bg-sec d-flex justify-content-center align-items-center"
+          >
+            <i class="text-white fa-solid fa-plus fa-6x"></i>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 px-4 mb-4">
+        <div
+          (click)="displayImage('/images/port2.png')"
+          class="inner position-relative"
+        >
+          <img class="w-100 rounded-3" src="/images/port2.png" alt="port2" />
+          <div
+            class="layar bg-sec d-flex justify-content-center align-items-center"
+          >
+            <i class="text-white fa-solid fa-plus fa-6x"></i>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 px-4 mb-4">
+        <div
+          (click)="displayImage('/images/port3.png')"
+          class="inner position-relative"
+        >
+          <img class="w-100 rounded-3" src="/images/port3.png" alt="port3" />
+          <div
+            class="layar bg-sec d-flex justify-content-center align-items-center"
+          >
+            <i class="text-white fa-solid fa-plus fa-6x"></i>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 px-4 mb-4">
+        <div
+          (click)="displayImage('/images/poert1.png')"
+          class="inner position-relative"
+        >
+          <img class="w-100 rounded-3" src="/images/poert1.png" alt="port1" />
+          <div
+            class="layar bg-sec d-flex justify-content-center align-items-center"
+          >
+            <i class="text-white fa-solid fa-plus fa-6x"></i>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 px-4 mb-4">
+        <div
+          (click)="displayImage('/images/port2.png')"
+          class="inner position-relative"
+        >
+          <img class="w-100 rounded-3" src="/images/port2.png" alt="port2" />
+          <div
+            class="layar bg-sec d-flex justify-content-center align-items-center"
+          >
+            <i class="text-white fa-solid fa-plus fa-6x"></i>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 px-4 mb-4">
+        <div
+          (click)="displayImage('/images/port3.png')"
+          class="inner position-relative"
+        >
+          <img class="w-100 rounded-3" src="/images/port3.png" alt="port3" />
+          <div
+            class="layar bg-sec d-flex justify-content-center align-items-center"
+          >
+            <i
+              class="text-white fa-solid fa-plus fa-6x"
+              style="color: #ffffff"
+            ></i>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  @if (isClicked === true) {
+  <div
+    (click)="hiddenImage()"
+    class="click-layar bg-layar position-fixed top-0 w-100 h-100 bg-opacity-25 d-flex justify-content-center align-items-center"
+  >
+    <img width="40%" [src]="imgSource" alt="port" />
+  </div>
+  } @else if (isClicked === false) {
+  <div></div>
+  }
+</section>

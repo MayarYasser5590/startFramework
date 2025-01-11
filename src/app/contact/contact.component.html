@@ -1,0 +1,99 @@
+<section class="pb-3">
+  <div class="container">
+    <div class="text-center">
+      <h1 class="mb-2 pt-5 fw-bold fs-1 text-uppercase">conatct section</h1>
+      <div class="icon m-auto position-relative mb-3">
+        <i class="fa-solid fa-star" style="color: #2c3e50"></i>
+      </div>
+    </div>
+    <div class="contact-form mx-auto">
+      <div class="mb-1 position-relative">
+        @if (text === '') {
+        <label
+          for="userName"
+          class="form-label color-sec opacity-0 label-hidden"
+          >userName:</label
+        >
+        } @else {
+        <label
+          for="userName"
+          class="form-label color-sec opacity-100 label-show"
+          >userName:</label
+        >
+        }
+        <input
+          [(ngModel)]="text"
+          type="text"
+          class="form-control py-3"
+          id="userName"
+          placeholder="userName"
+        />
+      </div>
+      <div class="mb-1 position-relative">
+        @if (age === "") {
+        <label for="userAge" class="form-label color-sec opacity-0 label-hidden"
+          >userAge:</label
+        >
+        } @else {
+        <label for="userAge" class="form-label color-sec opacity-100 label-show"
+          >userAge:</label
+        >
+        }
+        <input
+          [(ngModel)]="age"
+          type="text"
+          class="form-control py-3"
+          id="userAge"
+          placeholder="userAge"
+        />
+      </div>
+      <div class="mb-1 position-relative">
+        @if (email === '') {
+        <label
+          for="userEmail"
+          class="form-label color-sec opacity-0 label-hidden"
+          >userEmail:</label
+        >
+        } @else {
+        <label
+          for="userEmail"
+          class="form-label color-sec opacity-100 label-show"
+          >userEmail:</label
+        >
+        }
+        <input
+          [(ngModel)]="email"
+          type="email"
+          class="form-control py-3"
+          id="userEmail"
+          placeholder="userEmail"
+        />
+      </div>
+      <div class="mb-1 position-relative">
+        @if (password === '') {
+        <label
+          for="userPassword"
+          class="form-label color-sec opacity-0 label-hidden"
+          >userPassword:</label
+        >
+        } @else {
+        <label
+          for="userPassword"
+          class="form-label color-sec opacity-100 label-show"
+          >userPassword:</label
+        >
+        }
+        <input
+          [(ngModel)]="password"
+          type="password"
+          class="form-control py-3"
+          id="userPassword"
+          placeholder="userPassword"
+        />
+      </div>
+      <button class="bg-sec text-white btn mb-4 mt-4 text-center">
+        send Message
+      </button>
+    </div>
+  </div>
+</section>
